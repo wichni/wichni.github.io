@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>projects</title>
+    <script type="text/javascript" src="timer.js"></script>
+    <style>
+        .c-icon {
+            width: 36px;
+            height: 36px;
+            fill: currentColor;
+            transition: .2s;
+        }
+
+        .c-link--github:hover {
+            color: gray;
+        }
+
+        .c-link--github:hover::after {
+            background: gray;
+        }
+
+        .c-link {
+            position: relative;
+            color: white;
+        }
+
+        .c-link:not(:last-of-type) {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body onload="countdownTime();">
+    <div style="position: relative">
+        <img src="StockSnap_DMYMPAX1GL-min.jpg" style="
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;">
+
+        <div class="button">
+            <form action="index.html">
+                <button type="submit" class="back">Back</button>
+            </form>
+        </div>
+
+        <div id="clock" style="top: 20px; right: 100px; position: absolute; color: white"></div>
+
+        <div style="width: 49%;
+    top: 20px;
+    left: 300px;
+    text-align: center;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-variant: small-caps;">
+
+            <img src="ContainersApp-min.png" style="
+             vertical-align: middle;
+             width: 50px;
+             height: 50px;
+             border-radius: 8px;">
+
+            <a href="https://github.com/MaciejJay/ContainersApp" class="c-link c-link--github">
+                <svg class="c-icon">
+                    <use xlink:href="#icon--github"></use>
+                </svg>
+                <b>ContainersApp</b></a>
+
+            <img src="ContainerAppHomePage-min.png" style="
+             vertical-align: middle;
+             width: 50px;
+             height: 50px;
+             border-radius: 8px;">
+            <br />
+
+            <b style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+                The application is used to handle damaged sea containers, we have created it for intermodal companies
+                and
+                shipowners.
+                We used Spring MVC.
+                <br />
+                I wrote it together with</b>
+            <br />
+            <a href="https://www.linkedin.com/in/piotr-mi%C5%9Bko-5b670615a/">Piotr Miśko</a>
+            <br />
+            <a href="https://www.linkedin.com/in/pprzydanek/">Patryk Przydanek</a>
+            <br />
+            <a href="https://www.linkedin.com/in/maciej-jasinski/">Maciej Jasiński</a>
+            <br />
+            <br />
+
+            <img src="TravelAgency-min.png" style="
+             vertical-align: middle;
+             width: 50px;
+             height: 50px;
+             border-radius: 8px;">
+            <a href="https://github.com/wichni/TravelAgency" class="c-link c-link--github">
+                <svg class="c-icon">
+                    <use xlink:href="#icon--github"></use>
+                </svg>
+                <b>Travel Agency</b></a>
+            <br />
+            <b style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+                I created a travel agency project using Spring RESTful API</b>
+            <br />
+            <br />
+
+            <img src="textEditor-min.png" style="
+             vertical-align: middle;
+             width: 50px;
+             height: 50px;
+             border-radius: 8px;">
+            <a href="https://github.com/wichni/TextEditor1.0" class="c-link c-link--github">
+                <svg class="c-icon">
+                    <use xlink:href="#icon--github"></use>
+                </svg>
+                <b>Text Editor</b></a>
+            <br />
+            <b style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+                A text editor that allows you to validate Json, Csv, Xml and Url files.
+                <br />
+                We used javax.swing to write this program.
+                <br />
+                I wrote it together with</b>
+            <br />
+            <a href="https://www.linkedin.com/in/piotr-mi%C5%9Bko-5b670615a/">Piotr Miśko</a>
+            <br />
+
+            <img src="TicTacToe-min.png" style="
+             vertical-align: middle;
+             width: 50px;
+             height: 50px;
+             border-radius: 8px;">
+            <a href="https://github.com/wichni/TicTacToe" class="c-link c-link--github">
+                <svg class="c-icon">
+                    <use xlink:href="#icon--github"></use>
+                </svg>
+                <b>Tic Tac Toe - a simple game but high level :)</b></a>
+            <br />
+
+            <img src="GOL-min.png"
+                style="vertical-align: middle; width: 50px; height: 50px; border-radius: 8px;">
+            <a href="https://github.com/wichni/GoL" class="c-link c-link--github">
+                <svg class="c-icon">
+                    <use xlink:href="#icon--github"></use>
+                </svg>
+                <b>GOL - Game of life, it can go on forever :)</b></a>
+            <br />
+
+            <img src="ATM-Machine-min.png" style="
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;">
+            <a href="https://github.com/wichni/ATM-Machine" class="c-link c-link--github">
+                <svg class="c-icon">
+                    <use xlink:href="#icon--github"></use>
+                </svg>
+                <b>ATM-Machine is a small project that shows how an ATM works</b></a>
+        </div>
+        <div style="bottom: 20px; right: 20px; position: absolute; font-variant: small-caps;">
+            <h2 style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+                All repositories:
+                <a href="https://github.com/wichni?tab=repositories" class="c-link c-link--github" aria-label="GitHub">
+                    <svg class="c-icon">
+                        <use xlink:href="#icon--github"></use>
+                    </svg>
+                </a></h2>
+        </div>
+        <svg style="display: none">
+            <symbol id="icon--github" viewBox="0 0 44 44">
+                <path
+                    d="M10,22.3044338 C10,27.7398363 13.4380429,32.3519218 18.2065134,33.9789169 C18.8069002,34.0922174 19.0256914,33.7122831 19.0256914,33.3859777 C19.0256914,33.0936624 19.015378,32.3201977 19.0094846,31.2936952 C15.671629,32.0369464 14.9673716,29.6440399 14.9673716,29.6440399 C14.4214985,28.2224964 13.634734,27.8440727 13.634734,27.8440727 C12.5451978,27.0804274 13.7172412,27.0962895 13.7172412,27.0962895 C14.921698,27.1831532 15.555235,28.3644997 15.555235,28.3644997 C16.6263544,30.2445326 18.364161,29.7014455 19.0477915,29.3864702 C19.1568188,28.5911007 19.4669572,28.0495243 19.8095092,27.741347 C17.1449707,27.4309036 14.3434114,26.3756983 14.3434114,21.660887 C14.3434114,20.3171431 14.8111974,19.2188837 15.5788084,18.3585552 C15.4557844,18.0473565 15.0439854,16.7965191 15.6966758,15.1030543 C15.6966758,15.1030543 16.7044415,14.7714615 18.9962246,16.3637112 C19.9538967,16.0910346 20.9800792,15.9543187 22.0003683,15.9497867 C23.0199208,15.9543187 24.0461033,16.0910346 25.0052488,16.3637112 C27.2955585,14.7714615 28.3018509,15.1030543 28.3018509,15.1030543 C28.9560146,16.7965191 28.5442156,18.0473565 28.4211916,18.3585552 C29.1902759,19.2188837 29.6543786,20.3171431 29.6543786,21.660887 C29.6543786,26.3870284 26.8491359,27.4271269 24.1757574,27.7322829 C24.6067098,28.1122172 24.9897787,28.8630219 24.9897787,30.0103782 C24.9897787,31.6555014 24.9757819,32.9826279 24.9757819,33.3859777 C24.9757819,33.7153044 25.1916265,34.0975048 25.8008533,33.9774062 C30.5649038,32.3473898 34,27.7390809 34,22.3044338 C34,15.5086701 28.6267227,10 21.998895,10 C15.3732773,10 10,15.5086701 10,22.3044338 Z">
+                </path>
+            </symbol>
+        </svg>
+    </div>
+</body>
+
+</html>
