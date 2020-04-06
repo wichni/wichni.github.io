@@ -2,142 +2,92 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>skills</title>
     <script type="text/javascript" src="timer.js"></script>
-    <style>
-        .divanimationleft {
-            width: 120px;
-            height: 45px;
-            border-radius: 15px 50px 30px;
-            ;
-            text-align: center;
-            background-color: black;
-            font-weight: bolder;
-            font-max-size: larger;
-            position: absolute;
-            animation-name: mymove;
-            animation-duration: 15s;
-            animation-iteration-count: 1000;
-            animation-direction: alternate-reverse;
-            font-variant: small-caps;
-            color: white;
-        }
-
-        .divanimationright {
-            width: 120px;
-            height: 45px;
-            border-radius: 30px 50px 15px;
-            text-align: center;
-            background-color: black;
-            font-weight: bolder;
-            font-max-size: larger;
-            position: absolute;
-            animation-name: mymoveright;
-            animation-duration: 15s;
-            animation-iteration-count: 1000;
-            animation-direction: alternate-reverse;
-            font-variant: small-caps;
-            color: white;
-        }
-
-        @keyframes mymove {
-            from {
-                left: 20px;
-            }
-
-            to {
-                left: 500px;
-            }
-        }
-
-        @keyframes mymoveright {
-            from {
-                right: 20px;
-            }
-
-            to {
-                right: 500px;
-            }
-        }
-    </style>
 </head>
 
 <body onload="countdownTime();">
-    <div class="outside">
-        <img src="GVYM0DWG9D-min.jpg" style="
+<div class="outside">
+    <img src="GVYM0DWG9D-min.jpg" style="
         width: 100%;
         height: 100%;
         left: 0;
         top: 0;
         z-index: 1;">
 
-        <div class="button">
-            <form action="index.html">
-                <button type="submit" class="back">Back</button>
-            </form>
-        </div>
-
-        <div id="clock" style="top: 20px; right: 100px; position: absolute;"></div>
-
-        <div class="divanimationleft" style="top: 20px; animation-timing-function: linear; ">
-            <br />
-            <b>JAVA</b>
-        </div>
-        <div class="divanimationleft" style="animation-timing-function: ease; top: 80px ">
-            <br />
-            <b>MySQL</b>
-        </div>
-        <div class="divanimationleft" style="animation-timing-function: ease-in; top: 140px ">
-            <br />
-            <b>PostgreSQL</b>
-        </div>
-        <div class="divanimationleft" style="animation-timing-function: ease-out; top: 200px ">
-            <br />
-            <b>Git</b>
-        </div>
-        <div class="divanimationleft" style="animation-timing-function: ease-in-out; top: 260px ">
-            <b>HTML <br />CSS JS</b>
-        </div>
-        <div class="divanimationleft" style="animation-timing-function: linear; top: 320px ">
-            <br />
-            <b>Maven</b>
-        </div>
-        <div class="divanimationleft" style="animation-timing-function: ease; top: 380px ">
-            <br />
-            <b>TeamWork</b>
-        </div>
-        <div class="divanimationleft" style="animation-timing-function: ease-in; top: 440px ">
-            <br />
-            <b>Clean Code</b>
-        </div>
-
-
-        <div class="divanimationright" style="animation-timing-function: linear; bottom: 20px">
-            <br />
-            <b>TDD</b>
-        </div>
-        <div class="divanimationright" style="animation-timing-function: ease; bottom: 80px">
-            <br />
-            <b>Scrum</b>
-        </div>
-        <div class="divanimationright" style="animation-timing-function: ease-in; bottom: 140px">
-            <br />
-            <b>JVM</b>
-        </div>
-        <div class="divanimationright" style="animation-timing-function: ease-out; bottom: 200px">
-            <br />
-            <b>MongoDB</b>
-        </div>
-        <div class="divanimationright" style="animation-timing-function: ease-in-out; bottom: 260px">
-            <b>JDBC<br /> Hibernate</b>
-        </div>
-        <div class="divanimationright" style="animation-timing-function: linear; bottom: 320px">
-            <b>JSP <br /> Servlets</b>
-        </div>
-        <div class="divanimationright" style="animation-timing-function: ease; bottom: 380px">
-            <b>Spring Framework</b>
-        </div>
+    <div class="button">
+        <form action="index.html">
+            <button type="submit" class="back">Back</button>
+        </form>
     </div>
+
+    <div id="clock" style="top: 20px; right: 100px; position: absolute;"></div>
+
+    <div class="divanimationleft" style="top: 20px; animation-timing-function: linear; ">
+        <br />
+        <b>JAVA</b>
+    </div>
+    <div class="divanimationleft" style="animation-timing-function: ease; top: 80px ">
+        <br />
+        <b>MySQL</b>
+    </div>
+    <div class="divanimationleft" style="animation-timing-function: ease-in; top: 140px ">
+        <br />
+        <b>PostgreSQL</b>
+    </div>
+    <div class="divanimationleft" style="animation-timing-function: ease-out; top: 200px ">
+        <br />
+        <b>Git</b>
+    </div>
+    <div class="divanimationleft" style="animation-timing-function: ease-in-out; top: 260px ">
+        <b>HTML <br />CSS JS</b>
+    </div>
+    <div class="divanimationleft" style="animation-timing-function: linear; top: 320px ">
+        <br />
+        <b>Maven</b>
+    </div>
+    <div class="divanimationleft" style="animation-timing-function: ease; top: 380px ">
+        <br />
+        <b>TeamWork</b>
+    </div>
+    <div class="divanimationleft" style="animation-timing-function: ease-in; top: 440px ">
+        <br />
+        <b>Clean Code</b>
+    </div>
+
+
+    <div class="divanimationright" style="animation-timing-function: linear; bottom: 20px">
+        <br />
+        <b>TDD</b>
+    </div>
+    <div class="divanimationright" style="animation-timing-function: ease; bottom: 80px">
+        <br />
+        <b>Scrum</b>
+    </div>
+    <div class="divanimationright" style="animation-timing-function: ease-in; bottom: 140px">
+        <br />
+        <b>JVM</b>
+    </div>
+    <div class="divanimationright" style="animation-timing-function: ease-out; bottom: 200px">
+        <br />
+        <b>MongoDB</b>
+    </div>
+    <div class="divanimationright" style="animation-timing-function: ease-in-out; bottom: 260px">
+        <b>JDBC<br /> Hibernate</b>
+    </div>
+    <div class="divanimationright" style="animation-timing-function: linear; bottom: 320px">
+        <b>JSP <br /> Servlets</b>
+    </div>
+    <div class="divanimationright" style="animation-timing-function: ease; bottom: 380px">
+        <b>Spring <br /> Framework</b>
+    </div>
+
+    <div class="blend">
+        Level :
+        Junior</div>
+</div>
 </body>
 
 </html>

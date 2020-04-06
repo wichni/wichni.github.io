@@ -13,3 +13,80 @@ html {
 .outside {
     position: relative;
 }
+
+.c-icon {
+    width: 36px;
+    height: 36px;
+    fill: currentColor;
+    transition: .2s;
+}
+
+.blend {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    font-size: 150px;
+    mix-blend-mode: overlay;
+}
+
+.divanimationleft {
+    width: 120px;
+    height: 45px;
+    border-radius: 15px 50px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-weight: bolder;
+    font-max-size: larger;
+    position: absolute;
+    animation-name: mymove;
+    animation-duration: 15s;
+    animation-iteration-count: 1000;
+    animation-direction: alternate-reverse;
+    font-variant: small-caps;
+    color: white;
+}
+
+.divanimationright {
+    width: 120px;
+    height: 45px;
+    border-radius: 30px 50px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-weight: bolder;
+    font-max-size: larger;
+    position: absolute;
+    animation-name: mymoveright;
+    animation-duration: 15s;
+    animation-iteration-count: 1000;
+    animation-direction: alternate-reverse;
+    font-variant: small-caps;
+    color: white;
+}
+
+@keyframes mymove {
+    from {
+        left: 20px;
+    }
+
+    to {
+        left: 500px;
+    }
+}
+
+@keyframes mymoveright {
+    from {
+        right: 20px;
+    }
+
+    to {
+        right: 500px;
+    }
+}
