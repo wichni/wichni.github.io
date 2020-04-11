@@ -1,11 +1,13 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>homePage</title>
     <script type="text/javascript" src="timer.js"></script>
+
 </head>
 
 <body onload="countdownTime();">
@@ -18,37 +20,45 @@
         top: 0;
         z-index: 1;">
 
-    <div class="center" style="position: absolute;
-         top: 20px;
-         left: 20px;
-         text-align: center;
-         background-size: cover;
-         background-image: linear-gradient(109deg, greenyellow, yellow);
-         color: transparent;
-         -webkit-background-clip: text;
-         font-variant: small-caps;">
+    <div class="center">
 
-        <h1>Welcome on my site</h1>
-        <h3>Let me show you something about me</h3>
-        <p>
-            <b>If You want to read my scribbles <a href="aboutMe.html">Click About Me</a>.</b>
-            <b>If You wanna see my experience <a href="jobs.html">Click Experience</a>.</b>
-        </p>
-        <p>
-            <b>If You wanna see my skills <a href="skills.html">Click Skills</a>.</b>
-            <b>If You wanna see my projects <a href="projects.html">Click Projects</a>.</b>
-        </p>
-        <p>
-            <b>If You wanna see my certificates <a href="certificates.html">Click
-                Certificates</a>.</b>
-        </p>
-        <p>
-            <b>If you're interested enough that you want to write to me <a href="contact.html">Click
-                Contact</a>.</b>
-        </p>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Wichniarek Jakub</a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutMe.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jobs.html">Expierience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certificates.html">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
     <div id="clock" style="top: 20px; right: 100px; position: absolute; color: white"></div>
+
+    <div style="top: 100px; left: 120px; text-align: center; position: absolute;
+        color: blue; text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px darkblue;
+            font-variant: small-caps;">
+        <h1><b>Welcome to my website.</b></h1>
+
+        <h3><b>I am looking for a job as a Java programmer.</b></h3>
+
+        <h3><b>I discovered a passion for programming and I am looking for a place to develop.</b></h3>
+    </div>
 
     <div style="position: absolute;
          bottom: 20px;

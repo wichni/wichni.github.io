@@ -10,8 +10,12 @@ html {
     right: 20px;
 }
 
-.outside {
-    position: relative;
+.center {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    font-variant: small-caps;
 }
 
 .c-icon {

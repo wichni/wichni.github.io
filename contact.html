@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,7 +16,7 @@
         }
 
         .c-link--linkedin:hover {
-            color: blue;
+            color: #2867B2;
         }
 
         .c-link--facebook:hover {
@@ -31,7 +32,7 @@
         }
 
         .c-link--linkedin:hover::after {
-            background: blue;
+            background: #2867B2;
         }
 
         .c-link--mail:hover::after {
@@ -62,16 +63,40 @@
         left: 0;
         top: 0;
         z-index: 1;">
-    <div class="button">
-        <form action="index.html">
-            <button type="submit" class="back">Back</button>
-        </form>
+
+    <div class="center">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.html">Wichniarek Jakub</a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutMe.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jobs.html">Expierience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certificates.html">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
     <div id="clock" style="top: 20px; right: 100px; position: absolute"></div>
 
     <div style="width: 49%;
-         top: 40px;
+         top: 180px;
+         right: 180px;
          position: absolute;
          background-size: cover;
          background-image: linear-gradient(109deg, black, grey);
@@ -81,10 +106,10 @@
          padding-right: 20px;
          text-align: center;">
         <form method="post" enctype="text/plain">
-            <p>
-                <label for="email"></label>
-                <input type="text" id="email" name="email" placeholder="Your Email.." required>
-            </p>
+
+            <label for="email"></label>
+            <input type="text" id="email" name="email" placeholder="Your Email.." required>
+
             <label for="message"></label>
             <textarea id="message" name="message" placeholder="Write something.." style="
                 height:200px;
@@ -98,69 +123,74 @@
                 margin-bottom: 16px;"></textarea>
 
             <br />
-            <input type="button" class="btn btn-light-blue" value="Send" onclick="sendEmail();">
-            <input type="reset" class="btn btn-light-blue" value="Clear">
+            <input type="button" style="color: white;" class="btn btn-light-blue" value="Send"
+                   onclick="sendEmail();">
+            <input type="reset" style="color: white;" class="btn btn-light-blue" value="Clear">
         </form>
-
-        <div>
-            <h2>My link : </h2>
-            <p>
-                <a href="https://www.linkedin.com/in/jakub-wichniarek-53b49018b/" target="_blank" class="c-link c-link--linkedin"
-                   aria-label="LinkedIn">
-                    <svg class="c-icon">
-                        <use xlink:href="#icon--linkedin"></use>
-                    </svg>
-                </a>
-                <a href="https://www.facebook.com/jakub.wichniarek" target="_blank" class="c-link c-link--facebook"
-                   aria-label="Facebook">
-                    <svg class="c-icon">
-                        <use xlink:href="#icon--facebook"></use>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/j_with_code/" target="_blank" class="c-link c-link--instagram"
-                   aria-label="Instagram">
-                    <svg class="c-icon">
-                        <use xlink:href="#icon--instagram"></use>
-                    </svg>
-                </a>
-            </p>
-            <p>
-                <a href="CVJakubWichniarek.pdf" target="_blank">My CV</a>
-            </p>
-
-            <h2>Contact : </h2>
-            <b class="c-link c-link--mail">wichniarekjakub89@gmail.com
+    </div>
+    <div style="top: 180px; left: 80px; text-align: center; position: absolute;">
+        <h2>My link : </h2>
+        <p>
+            <a href="https://www.linkedin.com/in/jakub-wichniarek-53b49018b/" target="_blank"
+               class="c-link c-link--linkedin" aria-label="LinkedIn">
                 <svg class="c-icon">
-                    <use xlink:href="#icon--mail"></use>
+                    <use xlink:href="#icon--linkedin"></use>
                 </svg>
-            </b>
-        </div>
+            </a>
+        </p>
+        <p>
+            <a href="https://www.facebook.com/jakub.wichniarek" target="_blank" class="c-link c-link--facebook"
+               aria-label="Facebook">
+                <svg class="c-icon">
+                    <use xlink:href="#icon--facebook"></use>
+                </svg>
+            </a>
+        </p>
+        <p>
+            <a href="https://www.instagram.com/j_with_code/" target="_blank" class="c-link c-link--instagram"
+               aria-label="Instagram">
+                <svg class="c-icon">
+                    <use xlink:href="#icon--instagram"></use>
+                </svg>
+            </a>
+        </p>
+        <p>
+            <a href="CVJakubWichniarek.pdf" target="_blank">My CV</a>
+        </p>
 
-        <svg style="display: none">
-            <symbol id="icon--linkedin" viewBox="0 50 512 512">
-                <path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
+        <h2>Contact : </h2>
+        <b class="c-link c-link--mail">wichniarekjakub89@gmail.com
+            <svg class="c-icon">
+                <use xlink:href="#icon--mail"></use>
+            </svg>
+        </b>
+    </div>
+
+    <svg style="display: none">
+        <symbol id="icon--linkedin" viewBox="0 50 512 512">
+            <path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
 C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z
         M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615
         c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915
         s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"></path>
-            </symbol>
-            <symbol id="icon--facebook" viewBox="0 0 24 24">
-                <path
-                        d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z">
-                </path>
-            </symbol>
-            <symbol id="icon--instagram" viewBox="0 0 24 24">
-                <path
-                        d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
-                </path>
-            </symbol>
-            <symbol id="icon--mail" viewBox="0 0 44 44">
-                <path
-                        d="M13.1115479,18.9319176 C13.389863,19.1136566 14.228726,19.6535732 15.6282877,20.5512492 C17.0278493,21.4489252 18.0999726,22.1401747 18.8448082,22.6248583 C18.9266301,22.6779992 19.1005205,22.7934864 19.3664795,22.9714595 C19.6324384,23.149572 19.8534932,23.293652 20.0293425,23.4034207 C20.2053425,23.5131893 20.4181096,23.6363478 20.6677945,23.7726171 C20.9174795,23.9088864 21.1528493,24.0112628 21.3737534,24.0791882 C21.5948082,24.1475321 21.7994384,24.1814251 21.9876438,24.1814251 L22,24.1814251 L22.0123562,24.1814251 C22.2005616,24.1814251 22.4051918,24.1475321 22.6262466,24.0791882 C22.8471507,24.0112628 23.0826712,23.908747 23.3322055,23.7726171 C23.5817397,23.6362083 23.7945068,23.5131893 23.9705068,23.4034207 C24.1465068,23.293652 24.367411,23.149572 24.6333699,22.9714595 C24.8993288,22.7933469 25.0733699,22.6779992 25.1551918,22.6248583 C25.9080137,22.1400352 27.8233699,20.9090085 30.9006575,18.9316387 C31.4981233,18.545426 31.9971918,18.0794323 32.3983151,17.5339366 C32.799589,16.9887198 33,16.4167233 33,15.8182262 C33,15.3182 32.8054658,14.8901442 32.4166986,14.5340586 C32.0279315,14.177973 31.5674384,14 31.0356712,14 L12.9641781,14 C12.3340137,14 11.8491096,14.196942 11.5094658,14.5908259 C11.1698219,14.9848493 11,15.4773437 11,16.0681695 C11,16.5454609 11.2251233,17.0626427 11.6752192,17.6194362 C12.1253151,18.1762296 12.6041918,18.6137699 13.1115479,18.9319176 Z M31.7722192,20.1477413 C29.0879178,21.8294193 27.0497534,23.1363216 25.6586301,24.0681695 C25.1921096,24.3863173 24.813589,24.6345869 24.5229178,24.8124205 C24.2323973,24.990533 23.8457397,25.1722719 23.3627945,25.3579162 C22.88,25.5435605 22.4299041,25.6363129 22.0125068,25.6363129 L22,25.6363129 L21.9876438,25.6363129 C21.5702466,25.6363129 21.12,25.5435605 20.6372055,25.3579162 C20.154411,25.1722719 19.7676027,24.990533 19.4770822,24.8124205 C19.1865616,24.6345869 18.8080411,24.3863173 18.3415205,24.0681695 C17.2365479,23.3182 15.2027534,22.0112977 12.2399863,20.1477413 C11.7734658,19.8599997 11.360137,19.5302753 11,19.1591262 L11,28.1816343 C11,28.6818 11.192274,29.1097163 11.5769726,29.4658019 C11.9616712,29.822027 12.4241233,30 12.9643288,30 L31.0358219,30 C31.5758767,30 32.0383288,29.822027 32.4230274,29.4658019 C32.8078767,29.1095769 33,28.6818 33,28.1816343 L33,19.1591262 C32.648,19.522604 32.2388904,19.8523284 31.7722192,20.1477413 Z">
-                </path>
-            </symbol>
-        </svg>
-    </div>
+        </symbol>
+        <symbol id="icon--facebook" viewBox="0 0 24 24">
+            <path
+                    d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z">
+            </path>
+        </symbol>
+        <symbol id="icon--instagram" viewBox="0 0 24 24">
+            <path
+                    d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
+            </path>
+        </symbol>
+        <symbol id="icon--mail" viewBox="0 0 44 44">
+            <path
+                    d="M13.1115479,18.9319176 C13.389863,19.1136566 14.228726,19.6535732 15.6282877,20.5512492 C17.0278493,21.4489252 18.0999726,22.1401747 18.8448082,22.6248583 C18.9266301,22.6779992 19.1005205,22.7934864 19.3664795,22.9714595 C19.6324384,23.149572 19.8534932,23.293652 20.0293425,23.4034207 C20.2053425,23.5131893 20.4181096,23.6363478 20.6677945,23.7726171 C20.9174795,23.9088864 21.1528493,24.0112628 21.3737534,24.0791882 C21.5948082,24.1475321 21.7994384,24.1814251 21.9876438,24.1814251 L22,24.1814251 L22.0123562,24.1814251 C22.2005616,24.1814251 22.4051918,24.1475321 22.6262466,24.0791882 C22.8471507,24.0112628 23.0826712,23.908747 23.3322055,23.7726171 C23.5817397,23.6362083 23.7945068,23.5131893 23.9705068,23.4034207 C24.1465068,23.293652 24.367411,23.149572 24.6333699,22.9714595 C24.8993288,22.7933469 25.0733699,22.6779992 25.1551918,22.6248583 C25.9080137,22.1400352 27.8233699,20.9090085 30.9006575,18.9316387 C31.4981233,18.545426 31.9971918,18.0794323 32.3983151,17.5339366 C32.799589,16.9887198 33,16.4167233 33,15.8182262 C33,15.3182 32.8054658,14.8901442 32.4166986,14.5340586 C32.0279315,14.177973 31.5674384,14 31.0356712,14 L12.9641781,14 C12.3340137,14 11.8491096,14.196942 11.5094658,14.5908259 C11.1698219,14.9848493 11,15.4773437 11,16.0681695 C11,16.5454609 11.2251233,17.0626427 11.6752192,17.6194362 C12.1253151,18.1762296 12.6041918,18.6137699 13.1115479,18.9319176 Z M31.7722192,20.1477413 C29.0879178,21.8294193 27.0497534,23.1363216 25.6586301,24.0681695 C25.1921096,24.3863173 24.813589,24.6345869 24.5229178,24.8124205 C24.2323973,24.990533 23.8457397,25.1722719 23.3627945,25.3579162 C22.88,25.5435605 22.4299041,25.6363129 22.0125068,25.6363129 L22,25.6363129 L21.9876438,25.6363129 C21.5702466,25.6363129 21.12,25.5435605 20.6372055,25.3579162 C20.154411,25.1722719 19.7676027,24.990533 19.4770822,24.8124205 C19.1865616,24.6345869 18.8080411,24.3863173 18.3415205,24.0681695 C17.2365479,23.3182 15.2027534,22.0112977 12.2399863,20.1477413 C11.7734658,19.8599997 11.360137,19.5302753 11,19.1591262 L11,28.1816343 C11,28.6818 11.192274,29.1097163 11.5769726,29.4658019 C11.9616712,29.822027 12.4241233,30 12.9643288,30 L31.0358219,30 C31.5758767,30 32.0383288,29.822027 32.4230274,29.4658019 C32.8078767,29.1095769 33,28.6818 33,28.1816343 L33,19.1591262 C32.648,19.522604 32.2388904,19.8523284 31.7722192,20.1477413 Z">
+            </path>
+        </symbol>
+    </svg>
+</div>
 </div>
 </body>
 
