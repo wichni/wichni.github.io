@@ -55,6 +55,25 @@
         .outside {
             background-image: url("negative-space-macbook-white-iphone-notepad-code-Custom-1-min.jpg");
         }
+
+        .button {
+            color: #0b1c1d;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s;
+            letter-spacing: 4px;
+            border: 1px solid #0b1c1d;
+            outline: 0;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .button:hover {
+            background: #0b1c1d;
+            color: #fff;
+            box-shadow: 0 0 5px #0b1c1d, 0 0 25px #0b1c1d, 0 0 50px #0b1c1d, 0 0 100px #0b1c1d;
+        }
     </style>
 </head>
 
@@ -120,9 +139,8 @@
                 margin-bottom: 16px;"></textarea>
 
             <br />
-            <input type="button" style="color: white;" class="btn btn-light-blue" value="Send"
-                   onclick="sendEmail();">
-            <input type="reset" style="color: white;" class="btn btn-light-blue" value="Clear">
+            <input type="button" class="button" value="Send" onclick="sendEmail();">
+            <input type="reset" class="button" value="Clear">
         </form>
     </div>
     <div style="top: 180px; left: 80px; text-align: center; position: absolute;">

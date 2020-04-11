@@ -4,13 +4,6 @@ html {
     height: 100%;
 }
 
-.button {
-    background-size: cover;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
 .center {
     position: absolute;
     top: 20px;
