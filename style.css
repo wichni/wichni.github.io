@@ -46,7 +46,7 @@ html {
     position: absolute;
     animation-name: mymove;
     animation-duration: 15s;
-    animation-iteration-count: 1000;
+    animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     font-variant: small-caps;
     color: white;
@@ -65,7 +65,7 @@ html {
     position: absolute;
     animation-name: mymoveright;
     animation-duration: 15s;
-    animation-iteration-count: 1000;
+    animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     font-variant: small-caps;
     color: white;
