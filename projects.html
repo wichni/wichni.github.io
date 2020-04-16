@@ -7,17 +7,9 @@
     <title>projects</title>
     <script type="text/javascript" src="timer.js"></script>
     <style>
-        .c-link--github:hover {
-            color: gray;
-        }
-
-        .c-link--github:hover::after {
-            background: gray;
-        }
-
         .c-link {
             position: relative;
-            color: white;
+            color: gray;
         }
 
         .outside {
@@ -57,14 +49,7 @@
         </nav>
     </div>
 
-    <div id="clock" style="top: 20px; right: 100px; position: absolute; color: white"></div>
-
-    <div style="width: 49%;
-    top: 80px;
-    left: 300px;
-    text-align: center;
-    position: absolute;
-    font-variant: small-caps;">
+    <div class="projectsView">
 
         <img src="ContainersApp-min.png" alt="photo of the container application code" style="
              vertical-align: middle;
@@ -158,7 +143,7 @@
             <b>GOL - Game of life, it can go on forever :)</b></a>
 
     </div>
-    <div style="bottom: 20px; right: 20px; position: absolute; font-variant: small-caps;">
+    <div class="allRepoViewText" style="bottom: 20px; right: 20px; position: absolute; font-variant: small-caps;">
         <h2 style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
             All repositories:
             <a href="https://github.com/wichni?tab=repositories" target="_blank" class="c-link c-link--github"

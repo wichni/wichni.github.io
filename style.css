@@ -1,15 +1,7 @@
 body,
 html {
-    margin: 0;
-    height: 100%;
-}
-
-.center {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-align: center;
-    font-variant: small-caps;
+    max-width: 100%;
+    height: auto;
 }
 
 .outside {
@@ -25,6 +17,14 @@ html {
     height: 36px;
     fill: currentColor;
     transition: .2s;
+}
+
+.c-link--github:hover {
+    color: purple;
+}
+
+.c-link--github:hover::after {
+    background: purple;
 }
 
 .blend {
@@ -102,43 +102,144 @@ html {
     color: white;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .example {
-        background: red;
-    }
+.center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-variant: small-caps;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    width: 100%;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .example {
-        background: green;
-    }
+.myImage {
+    position: absolute;
+    border-radius: 50%;
+    height: 80%;
+    left: 50px;
+    top: 60px;
+    z-index: 1;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .example {
-        background: blue;
-    }
+.projectsView {
+    width: 49%;
+    top: 80px;
+    left: 300px;
+    text-align: center;
+    position: absolute;
+    font-variant: small-caps;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .example {
-        background: orange;
-    }
-}
+@media screen and (max-width: 767px) {
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .example {
-        background: pink;
+    .center {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-variant: small-caps;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.5s;
     }
-}
 
-@media only screen and (orientation: landscape) {
-    body {
-        background-color: lightblue;
+    .indexText {
+        position: relative;
+        margin-top: 160px;
+    }
+
+    .indexMotto {
+        position: relative;
+        margin-bottom: -150px;
+    }
+
+    .myImage {
+        top: 265px;
+        left: 120px;
+        height: 55%;
+        text-align: center;
+        position: relative;
+    }
+
+    .insideAboutMeText {
+        text-align: justify;
+        position: relative;
+        margin-right: 50px;
+        margin-top: 520px;
+    }
+
+    .insideJobsText {
+        position: relative;
+        margin-top: 150px;
+        margin-left: -200px;
+    }
+
+    .projectsView {
+        position: relative;
+        margin-top: 200px;
+        margin-left: -200px;
+    }
+
+    .allRepoViewText {
+        position: relative;
+        margin-bottom: -620px;
+        margin-right: 50px;
+
+    }
+
+    .divanimationleft {
+        margin-top: 200px;
+        margin-left: 350px;
+        animation-duration: 0s;
+        animation-direction: alternate;
+        background-color: blanchedalmond;
+        color: black;
+    }
+
+    .divanimationright {
+        margin-top: 200px;
+        margin-right: -450px;
+        animation-duration: 0s;
+        animation-direction: alternate-reverse;
+        background-color: blanchedalmond;
+        color: black;
+    }
+
+    .blend {
+        width: 100vw;
+        height: 1000px;
+
+    }
+
+    .certificatesFirstText {
+        position: relative;
+        margin-top: 200px;
+        margin-left: -400px;
+        color: seashell;
+    }
+
+    .sdaText {
+        position: relative;
+        margin-top: 250px;
+    }
+
+    .udemyText {
+        position: relative;
+        margin-top: 400px;
+        margin-right: 60px;
+    }
+
+    .myLinks {
+        position: relative;
+        margin-top: 100px;
+        margin-left: 50px;
+        color: seashell;
+    }
+
+    .mailBoard {
+        position: relative;
+        margin-top: 440px;
+        margin-right: -60px;
+
     }
 }
