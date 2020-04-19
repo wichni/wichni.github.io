@@ -495,13 +495,13 @@ body {
         position: relative;
         width: 450px;
         left: 0;
-        margin-top: 200px;
+        margin-top: 300px;
     }
 
     .allRepoViewText {
         position: relative;
         margin-top: 250px;
-        left: 0px;
+        text-align: center;
     }
 
     /* skills.html */
