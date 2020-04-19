@@ -287,7 +287,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
     .fixedImageOnlyOnMediaScreen {
         height: 100%;
@@ -323,7 +323,7 @@ body {
     /* aboutMe.html */
     .myImage {
         top: 265px;
-        left: 120px;
+        left: 100px;
         height: 55%;
         position: relative;
     }
@@ -331,8 +331,8 @@ body {
     .insideAboutMeText {
         text-align: justify;
         position: relative;
-        width: 350px;
-        margin-right: 50px;
+        width: 400px;
+        margin-right: 0px;
         margin-top: 200px;
     }
 
@@ -349,6 +349,138 @@ body {
     /* projects.html */
     .projectsView {
         position: relative;
+        margin-top: 200px;
+        margin-left: -200px;
+    }
+
+    .allRepoViewText {
+        position: relative;
+        margin-top: 280px;
+        margin-left: 100px;
+    }
+
+    /* skills.html */
+
+    .divanimationleft {
+        margin-top: 600px;
+        margin-left: 350px;
+        animation-duration: 0s;
+        animation-direction: alternate;
+        background-color: blanchedalmond;
+        color: black;
+    }
+
+    .divanimationright {
+        margin-top: 600px;
+        margin-right: -450px;
+        animation-duration: 0s;
+        animation-direction: alternate-reverse;
+        background-color: blanchedalmond;
+        color: black;
+    }
+
+    .blend {
+        margin-top: 150px;
+        width: 100vw;
+        height: 1000px;
+
+    }
+
+    /* certificates.html */
+    .certificatesFirstText {
+        position: relative;
+        color: seashell;
+    }
+
+    .sdaText {
+        position: relative;
+        margin-top: 150px;
+    }
+
+    .udemyText {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+    /* contact.html */
+    .myLinks {
+        position: relative;
+        top: 0;
+        left: 0;
+
+    }
+
+    .mailBoard {
+        position: relative;
+        top: 750px;
+        left: 150px;
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .fixedImageOnlyOnMediaScreen {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .center {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-variant: small-caps;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    /* index.html */
+    .indexText {
+        position: relative;
+        margin-top: 160px;
+        left: 0;
+    }
+
+    .indexMotto {
+        position: relative;
+        text-align: center;
+        margin-top: 350px;
+    }
+
+    /* aboutMe.html */
+    .myImage {
+        top: 265px;
+        left: 100px;
+        height: 55%;
+        position: relative;
+    }
+
+    .insideAboutMeText {
+        text-align: justify;
+        position: relative;
+        width: 350px;
+        margin-right: 100px;
+        margin-top: 200px;
+    }
+
+    /* jobs.html */
+    .insideJobsText {
+        position: relative;
+        width: 350px;
+        margin-top: 150px;
+        margin-left: -220px;
+        color: black;
+        text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+    }
+
+    /* projects.html */
+    .projectsView {
+        position: relative;
+        width: 250px;
         margin-top: 200px;
         margin-left: -200px;
     }
