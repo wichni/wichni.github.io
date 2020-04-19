@@ -418,8 +418,7 @@ body {
 
     }
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
     .fixedImageOnlyOnMediaScreen {
         height: 100%;
         background-position: center;
@@ -462,8 +461,8 @@ body {
     .insideAboutMeText {
         text-align: justify;
         position: relative;
-        width: 350px;
-        margin-right: 100px;
+        width: 300px;
+        margin-right: 0px;
         margin-top: 200px;
     }
 
@@ -540,6 +539,7 @@ body {
         position: relative;
         top: 0;
         left: 0;
+
     }
 
     .mailBoard {
