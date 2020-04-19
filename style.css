@@ -493,15 +493,15 @@ body {
 
     /* projects.html */
     .projectsView {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0;
-        top: 300px;
+        margin-top: 200px;
     }
 
     .allRepoViewText {
-        position: absolute;
-        top: 1050px;
+        position: relative;
+        margin-top: 280px;
         left: 0;
     }
 
