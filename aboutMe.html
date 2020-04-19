@@ -6,16 +6,19 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>AboutMe</title>
-    <script type="text/javascript" src="timer.js"></script>
 
     <style>
         .outside {
             background-image: url("StockSnap_0URTT0POJV-min.jpg");
         }
+
+        .fixedImageOnlyOnMediaScreen {
+            background-image: url("StockSnap_0URTT0POJV-min.jpg");
+        }
     </style>
 </head>
 
-<body onload="countdownTime();">
+<body>
 <div class="outside">
 
     <div>
@@ -50,11 +53,7 @@
         </nav>
     </div>
 
-    <div class="insideAboutMeText" style="position: absolute; width: 51%; float: right; font-variant: small-caps;
-         top: 80px;
-         right: 50px;
-         color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-         text-align: center;">
+    <div class="insideAboutMeText">
 
         <h2>About me</h2>
         <h5>From an early age I was interested in computer science and programming. I studied at home whenever
@@ -67,6 +66,8 @@
             IT industry and fulfill myself, which gives me the greatest pleasure.</h5>
     </div>
 </div>
+<div class="fixedImageOnlyOnMediaScreen"></div>
+<div class="fixedImageOnlyOnMediaScreen"></div>
 </body>
 
 </html>

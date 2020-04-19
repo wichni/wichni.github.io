@@ -5,7 +5,6 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>projects</title>
-    <script type="text/javascript" src="timer.js"></script>
     <style>
         .c-link {
             position: relative;
@@ -15,10 +14,14 @@
         .outside {
             background-image: url("StockSnap_DMYMPAX1GL-min.jpg");
         }
+
+        .fixedImageOnlyOnMediaScreen {
+            background-image: url("StockSnap_DMYMPAX1GL-min.jpg");
+        }
     </style>
 </head>
 
-<body onload="countdownTime();">
+<body>
 <div class="outside">
 
     <div class="center">
@@ -51,11 +54,7 @@
 
     <div class="projectsView">
 
-        <img src="ContainersApp-min.png" alt="photo of the container application code" style="
-             vertical-align: middle;
-             width: 50px;
-             height: 50px;
-             border-radius: 8px;">
+        <img src="ContainersApp-min.png" class="photoBorder" alt="photo of the container application code">
 
         <a href="https://github.com/MaciejJay/ContainersApp" target="_blank" class="c-link c-link--github">
             <svg class="c-icon">
@@ -63,14 +62,11 @@
             </svg>
             <b>ContainersApp</b></a>
 
-        <img src="ContainerAppHomePage-min.png" alt="photo of the container application home page" style="
-             vertical-align: middle;
-             width: 50px;
-             height: 50px;
-             border-radius: 8px;">
+        <img src="ContainerAppHomePage-min.png" class="photoBorder"
+             alt="photo of the container application home page">
         <br />
 
-        <b style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+        <b class="textView">
             The application is used to handle damaged sea containers, we have created it for intermodal companies
             and
             shipowners.
@@ -85,33 +81,25 @@
         <a href="https://www.linkedin.com/in/maciej-jasinski/" target="_blank">Maciej Jasiński</a>
         <br />
 
-        <img src="TravelAgency-min.png" alt="photo of the travel agency application code" style="
-             vertical-align: middle;
-             width: 50px;
-             height: 50px;
-             border-radius: 8px;">
+        <img src="TravelAgency-min.png" class="photoBorder" alt="photo of the travel agency application code">
         <a href="https://github.com/wichni/TravelAgency" target="_blank" class="c-link c-link--github">
             <svg class="c-icon">
                 <use xlink:href="#icon--github"></use>
             </svg>
             <b>Travel Agency</b></a>
         <br />
-        <b style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+        <b class="textView">
             I created a travel agency project using Spring RESTful API</b>
         <br />
 
-        <img src="textEditor-min.png" alt="photo of the text editor application code" style="
-             vertical-align: middle;
-             width: 50px;
-             height: 50px;
-             border-radius: 8px;">
+        <img src="textEditor-min.png" class="photoBorder" alt="photo of the text editor application code">
         <a href="https://github.com/wichni/TextEditor1.0" target="_blank" class="c-link c-link--github">
             <svg class="c-icon">
                 <use xlink:href="#icon--github"></use>
             </svg>
             <b>Text Editor</b></a>
         <br />
-        <b style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+        <b class="textView">
             A text editor that allows you to validate Json, Csv, Xml and Url files.
             <br />
             We used javax.swing to write this program.
@@ -121,11 +109,7 @@
         <a href="https://www.linkedin.com/in/piotr-mi%C5%9Bko-5b670615a/" target="_blank">Piotr Miśko</a>
         <br />
 
-        <img src="TicTacToe-min.png" alt="photo of the TicTacToe application code" style="
-             vertical-align: middle;
-             width: 50px;
-             height: 50px;
-             border-radius: 8px;">
+        <img src="TicTacToe-min.png" class="photoBorder" alt="photo of the TicTacToe application code">
         <a href="https://github.com/wichni/TicTacToe" target="_blank" class="c-link c-link--github">
             <svg class="c-icon">
                 <use xlink:href="#icon--github"></use>
@@ -134,8 +118,7 @@
         <br />
         <br />
 
-        <img src="GOL-min.png" alt="photo of the game of life application code"
-             style="vertical-align: middle; width: 50px; height: 50px; border-radius: 8px;">
+        <img src="GOL-min.png" class="photoBorder" alt="photo of the game of life application code">
         <a href="https://github.com/wichni/GoL" target="_blank" class="c-link c-link--github">
             <svg class="c-icon">
                 <use xlink:href="#icon--github"></use>
@@ -143,8 +126,8 @@
             <b>GOL - Game of life, it can go on forever :)</b></a>
 
     </div>
-    <div class="allRepoViewText" style="bottom: 20px; right: 20px; position: absolute; font-variant: small-caps;">
-        <h2 style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+    <div class="allRepoViewText">
+        <h2 class="textView">
             All repositories:
             <a href="https://github.com/wichni?tab=repositories" target="_blank" class="c-link c-link--github"
                aria-label="GitHub">
@@ -161,6 +144,7 @@
         </symbol>
     </svg>
 </div>
+<div class="fixedImageOnlyOnMediaScreen"></div>
 </body>
 
 </html>

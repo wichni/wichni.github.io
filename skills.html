@@ -6,16 +6,31 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>skills</title>
-    <script type="text/javascript" src="timer.js"></script>
 
     <style>
         .outside {
             background-image: url("GVYM0DWG9D-min.jpg");
         }
+
+        .fixedImageOnlyOnMediaScreen {
+            background-image: url("GVYM0DWG9D-min.jpg");
+        }
+
+        .blend {
+            width: 100vw;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50px;
+            font-size: 150px;
+            mix-blend-mode: overlay;
+        }
     </style>
 </head>
 
-<body onload="countdownTime();">
+<body>
 <div class="outside">
 
     <div class="center">
@@ -105,6 +120,7 @@
         Level :
         Junior</div>
 </div>
+<div class="fixedImageOnlyOnMediaScreen"></div>
 </body>
 
 </html>
