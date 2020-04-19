@@ -495,14 +495,14 @@ body {
     .projectsView {
         position: relative;
         width: 350px;
-        left: 0;
+        left: 20px;
         margin-top: 200px;
     }
 
     .allRepoViewText {
         position: relative;
         margin-top: 280px;
-        left: 0;
+        left: 20px;
     }
 
     /* skills.html */
