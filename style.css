@@ -230,7 +230,18 @@ body {
     font-variant: small-caps;
 }
 
-/* skills.html */
+ /*skills.html */
+.blend {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    font-size: 150px;
+    mix-blend-mode: overlay;
+}
 .divanimationleft {
     width: 120px;
     height: 45px;
@@ -451,12 +462,12 @@ body {
         position: relative;
         text-align: center;
         margin-top: 350px;
+        left: 0;
     }
 
     /* aboutMe.html */
     .myImage {
         top: 265px;
-        left: 100px;
         height: 55%;
         position: relative;
     }
@@ -465,7 +476,6 @@ body {
         text-align: justify;
         position: relative;
         width: 300px;
-        margin-right: 0px;
         margin-top: 200px;
     }
 
@@ -482,22 +492,22 @@ body {
     /* projects.html */
     .projectsView {
         position: relative;
-        width: 250px;
+        width: 450px;
+        left: 0;
         margin-top: 200px;
-        margin-left: -200px;
     }
 
     .allRepoViewText {
         position: relative;
-        margin-top: 280px;
-        margin-left: 100px;
+        margin-top: 250px;
+        left: 0px;
     }
 
     /* skills.html */
 
     .divanimationleft {
         margin-top: 600px;
-        margin-left: 200px;
+        margin-left: 260px;
         animation-duration: 0s;
         animation-direction: alternate;
         background-color: blanchedalmond;
@@ -514,6 +524,7 @@ body {
     }
 
     .blend {
+        font-size: 130px;
         margin-top: 150px;
     }
 
@@ -545,7 +556,7 @@ body {
     .mailBoard {
         position: relative;
         top: 750px;
-        left: 150px;
+        left: 125px;
 
     }
 }
