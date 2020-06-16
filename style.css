@@ -1,7 +1,6 @@
 html,
 body {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -168,7 +167,7 @@ body {
 }
 
 .textArea {
-    height:200px;
+    height: 200px;
     resize: none;
     width: 100%;
     padding: 12px;
@@ -334,7 +333,7 @@ body {
         transition: 0.5s;
     }
 
-     /*index.html */
+    /*index.html */
     .indexText {
         position: relative;
         margin-top: 160px;
@@ -388,7 +387,6 @@ body {
     }
 
     /* skills.html */
-
     .divanimationleft {
         margin-top: 600px;
         margin-left: 260px;
@@ -441,6 +439,73 @@ body {
         position: relative;
         top: 750px;
         left: 100px;
+    }
+}
 
+@media only screen and (max-width: 1920px) {
+
+    .fixedImageOnlyOnMediaScreen {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .center {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-variant: small-caps;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    /* certificates.html */
+    .certificatesFirstText {
+        left: 850px;
+    }
+
+    /* contact.html */
+    .mailBoard {
+        right: 280px;
+    }
+
+    .myLinks {
+        left: 200px;
+    }
+
+    /* jobs.html */
+    .insideJobsText {
+        width: 49%;
+        top: 200px;
+        left: 450px;
+    }
+
+    .textColor {
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+    }
+
+    /* projects.html */
+    .projectsView {
+        top: 180px;
+        left: 450px;
+    }
+
+    /* skills.html */
+    .blend {
+        top: 200px;
+    }
+
+    .divanimationleft {
+        width: 250px;
+        height: 65px;
+    }
+
+    .divanimationright {
+        width: 250px;
+        height: 65px;
     }
 }
