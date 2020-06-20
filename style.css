@@ -20,9 +20,6 @@ body {
 }
 
 .center {
-    position: absolute;
-    top: 0;
-    left: 0;
     font-variant: small-caps;
     z-index: 1;
     overflow-x: hidden;
@@ -154,15 +151,13 @@ body {
 
 .mailBoard {
     width: 49%;
-    top: 200px;
-    right: 180px;
+    margin-top: 190px;
+    margin-left: 700px;
     position: absolute;
     background-size: cover;
     background-image: linear-gradient(109deg, black, grey);
     color: transparent;
     -webkit-background-clip: text;
-    padding-left: 20px;
-    padding-right: 20px;
     text-align: center;
 }
 
@@ -179,8 +174,8 @@ body {
 }
 
 .myLinks {
-    top: 180px;
-    left: 80px;
+    width: 49%;
+    margin-top: 190px;
     text-align: center;
     position: absolute;
     color: aquamarine;
@@ -189,14 +184,13 @@ body {
 
 /* jobs.html */
 .insideJobsText {
-    position: absolute;
     width: 49%;
-    top: 100px;
-    left: 300px;
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
     text-align: center;
     font-variant: small-caps;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .textColor {
@@ -223,16 +217,14 @@ body {
 
 .textView {
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .projectsView {
     width: 49%;
-    top: 80px;
-    left: 300px;
     text-align: center;
-    position: absolute;
     font-variant: small-caps;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .allRepoViewText {
