@@ -185,6 +185,7 @@ body {
 /* jobs.html */
 .insideJobsText {
     width: 49%;
+    position: absolute;
     top: 100px;
     left: 300px;
     color: white;
@@ -220,6 +221,7 @@ body {
 }
 
 .projectsView {
+    position: absolute;
     width: 49%;
     top: 80px;
     left: 300px;
