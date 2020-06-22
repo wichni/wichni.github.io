@@ -20,13 +20,11 @@ body {
 }
 
 .center {
-    position: absolute;
-    top: 0;
-    left: 0;
     font-variant: small-caps;
     z-index: 1;
     overflow-x: hidden;
     transition: 0.5s;
+    width: 100%;
 }
 
 /* Index.html */
@@ -186,13 +184,14 @@ body {
 
 /* jobs.html */
 .insideJobsText {
-    text-align: justify;
-    position: relative;
-    width: 300px;
-    margin-top: 200px;
-    margin-left: -250px;
-    color: black;
-    text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+    width: 49%;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+    text-align: center;
+    font-variant: small-caps;
 }
 
 .textColor {
@@ -223,9 +222,9 @@ body {
 
 .projectsView {
     position: absolute;
-    width: 350px;
-    left: 20px;
-    margin-top: 200px;
+    width: 49%;
+    top: 80px;
+    left: 300px;
     text-align: center;
     font-variant: small-caps;
 }
