@@ -53,11 +53,7 @@ body {
 }
 
 .insideAboutMeText {
-    width: 51%;
     margin: 0 auto;
-    margin-top: 150px;
-    margin-right: 150px;
-    float: right;
     font-variant: small-caps;
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
