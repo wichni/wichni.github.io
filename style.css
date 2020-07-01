@@ -67,9 +67,6 @@ body {
 /* certificates.html */
 .certificatesFirstText {
     text-align: center;
-    top: 100px;
-    left: 550px;
-    position: absolute;
 }
 
 .sdaText {
@@ -386,12 +383,10 @@ body {
 
     .sdaText {
         position: relative;
-        margin-top: 150px;
     }
 
     .udemyText {
         position: relative;
-        margin-top: 50px;
         margin-left: 40px;
     }
 
