@@ -47,9 +47,8 @@ body {
 /* aboutMe.html */
 .myImage {
     border-radius: 50%;
+    height: 60%;
     margin: 0 auto;
-    margin-top: 100px;
-    margin-left: 150px;
 }
 
 .insideAboutMeText {
@@ -316,13 +315,11 @@ body {
     /* aboutMe.html */
     .myImage {
         margin: 0 auto;
-        border-radius: inherit;
     }
 
     .insideAboutMeText {
         width: 300px;
         margin: 0 auto;
-        margin-right: 40px;
     }
 
     /* jobs.html */
