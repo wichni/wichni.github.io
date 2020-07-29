@@ -61,22 +61,6 @@
         </nav>
     </div>
 
-    <div class="mailBoard">
-        <form method="post" enctype="text/plain">
-
-            <label for="email"></label>
-            <input type="text" id="email" name="email" placeholder="Your Email.." required>
-
-            <label for="message"></label>
-            <textarea class="textArea" id="message" name="message" placeholder="Write something.."></textarea>
-
-            <br />
-            <input type="button" class="button" value="Send" onclick="sendEmail();">
-            <br />
-            <br />
-            <input type="reset" class="button" value="Clear">
-        </form>
-    </div>
     <div class="myLinks">
         <h2>My link : </h2>
         <p>
@@ -115,6 +99,23 @@
         </b>
     </div>
 
+    <div class="mailBoard">
+        <form method="post" enctype="text/plain">
+
+            <label for="email"></label>
+            <input type="text" id="email" name="email" placeholder="Your Email.." required>
+
+            <label for="message"></label>
+            <textarea class="textArea" id="message" name="message" placeholder="Write something.."></textarea>
+
+            <br />
+            <input type="button" class="button" value="Send" onclick="sendEmail();">
+            <br />
+            <br />
+            <input type="reset" class="button" value="Clear">
+        </form>
+    </div>
+
     <svg style="display: none">
         <symbol id="icon--linkedin" viewBox="0 50 512 512">
             <path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
@@ -141,6 +142,7 @@ C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M14
     </svg>
 </div>
 </div>
+<div class="fixedImageOnlyOnMediaScreen"></div>
 <div class="fixedImageOnlyOnMediaScreen"></div>
 </body>
 
