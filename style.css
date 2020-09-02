@@ -316,9 +316,9 @@ body {
     /*index.html */
     .indexText {
         position: relative;
-        margin-top: 120px;
+        margin-top: 80px;
         left: 0;
-        animation-duration: 5s;
+        animation-duration: 3s;
     }
 
     .indexMotto {
