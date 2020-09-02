@@ -263,6 +263,7 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     font-variant: small-caps;
+    background-image: linear-gradient(grey, darkblue);
     color: white;
 }
 
@@ -282,6 +283,7 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     font-variant: small-caps;
+    background-image: linear-gradient(grey, darkblue);
     color: white;
 }
 
@@ -364,9 +366,8 @@ body {
         margin-left: 260px;
         animation-duration: 0s;
         animation-direction: alternate;
-        /*background-color: blanchedalmond;*/
-        background-image: linear-gradient(red, orange, yellow, green, blue, darkblue, pink, purple);
-        /*color: black;*/
+        background-color: blanchedalmond;
+        color: black;
     }
 
     .divanimationright {
