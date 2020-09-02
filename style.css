@@ -10,7 +10,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    filter: brightness(3);
 }
 
 .c-icon {
@@ -290,7 +289,6 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        filter: brightness(3);
     }
 
 
