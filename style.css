@@ -364,8 +364,9 @@ body {
         margin-left: 260px;
         animation-duration: 0s;
         animation-direction: alternate;
-        background-color: blanchedalmond;
-        color: black;
+        /*background-color: blanchedalmond;*/
+        background-image: linear-gradient(red, orange, yellow, green, blue, darkblue, pink, purple);
+        /*color: black;*/
     }
 
     .divanimationright {
