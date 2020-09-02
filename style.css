@@ -32,7 +32,7 @@ body {
     white-space: nowrap;
     border-right: .15em solid #fff;
     color: aquamarine;
-    text-shadow: 5px 5px 5px #ffd700;
+    text-shadow: 5px 5px 5px aquamarine;
     font-family: 'Courgette', cursive;
     overflow: hidden;
     letter-spacing: 0.25em;
@@ -44,12 +44,12 @@ body {
     /*animation-direction: alternate-reverse;*/
 }
 
-@keyframes myMoveText {
+@keyframes typing {
     from {
-        left: 60px;
+        width: 0;
     }
     to {
-        left: 500px;
+        width: 100%;
     }
 }
 
