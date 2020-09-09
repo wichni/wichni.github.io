@@ -264,8 +264,8 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     font-variant: small-caps;
-    background-image: linear-gradient(grey, darkblue);
-    color: white;
+    background-image: linear-gradient(white, snow);
+    color: blue;
 }
 
 .divanimationright {
