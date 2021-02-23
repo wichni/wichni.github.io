@@ -26,17 +26,31 @@ body {
 
 /* Index.html */
 .indexText {
-    top: 100px;
-    left: 60px;
+    margin: 0 auto;
     text-align: center;
     position: absolute;
+    white-space: nowrap;
     color: aquamarine;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    font-variant: small-caps;
+    font-family: 'Courgette', cursive;
+    overflow: hidden;
+    animation: typing 10s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+    animation-direction: alternate-reverse;
+    padding-top: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 .indexMotto {
     position: absolute;
+    font-family: 'Courgette', cursive;
     bottom: 20px;
     right: 20px;
     color: white;
@@ -54,9 +68,8 @@ body {
 
 .insideAboutMeText {
     margin: 0 auto;
-    font-variant: small-caps;
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
     text-align: center;
 }
 
@@ -128,6 +141,7 @@ body {
     border-radius: 5px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
 }
 
 .button:hover {
@@ -138,14 +152,22 @@ body {
 
 .mailBoard {
     width: 49%;
-    top: 200px;
+    top: 180px;
     right: 180px;
     position: absolute;
     background-size: cover;
     background-image: linear-gradient(109deg, black, grey);
     color: transparent;
     -webkit-background-clip: text;
-    text-align: center;
+}
+
+.email {
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 15%;
 }
 
 .textArea {
@@ -174,7 +196,7 @@ body {
     width: 49%;
     margin: 0 auto;
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
     text-align: center;
     font-variant: small-caps;
 }
@@ -228,7 +250,7 @@ body {
 }
 
 .divanimationleft {
-    width: 120px;
+    width: 140px;
     height: 45px;
     border-radius: 15px 50px 30px;
     display: flex;
@@ -243,11 +265,12 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     font-variant: small-caps;
-    color: white;
+    background-image: linear-gradient(white, snow);
+    color: blue;
 }
 
 .divanimationright {
-    width: 120px;
+    width: 140px;
     height: 45px;
     border-radius: 30px 50px 15px;
     display: flex;
@@ -262,7 +285,8 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     font-variant: small-caps;
-    color: white;
+    background-image: linear-gradient(white, snow);
+    color: blue;
 }
 
 @keyframes mymove {
@@ -297,8 +321,8 @@ body {
     /*index.html */
     .indexText {
         position: relative;
-        margin-top: 160px;
-        left: 0;
+        white-space: inherit;
+        animation: inherit;
     }
 
     .indexMotto {
