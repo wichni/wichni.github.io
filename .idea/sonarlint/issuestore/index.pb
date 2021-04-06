@@ -1,0 +1,16 @@
+
+:
+
+index.html,f/6/f6013a00b362253c64368d6eebc50ea2131754e2
+<
+contact.html,1/4/143617604351c3b10191461458ec5e120a28597c
+5
+CNAME,b/9/b9c1aaaf65573c7e15b93b6d826729e7711cf242
+<
+aboutMe.html,d/2/d2f5c3a2e6e0a3835384dc3e4e4e24b16ab439ab
+A
+certificates.html,9/9/99ebf86ebca943b3dba9c79951f8001088da8f16
+9
+	style.css,4/6/46e3381e9569c09e85a30b9e5a2af7525ee9fd78
+;
+sendMail.js,f/0/f0c5e8b19985007aed9539565f5fdf1624b0d2c4
